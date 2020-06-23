@@ -32,6 +32,12 @@ public class Fish : MonoBehaviour
 
     void LateUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.LeftControl) && m_bIsHold)
+        {
+            m_bIsHold = false;
+            // 던지기
+        }
+
         if (m_bIsDead)
             Destroy(this.gameObject);
     }
@@ -44,8 +50,8 @@ public class Fish : MonoBehaviour
             {
                 if (!m_bIsHold)
                     m_bIsHold = true;
-                else
-                    m_bIsHold = false;
+            //    else
+            //        m_bIsHold = false;
             }
         }
     }
@@ -54,7 +60,7 @@ public class Fish : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Knife") && !m_bIsDead)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.LeftControl))  // 다지기
             {
                 player.GetComponent<Player>().SetPlayerIsMove(false);
                 ChopfishClone = Instantiate(Chopfish, this.transform.position, Quaternion.Euler(0, -90, 0));

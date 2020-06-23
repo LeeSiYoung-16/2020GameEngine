@@ -46,9 +46,9 @@ public class Player : MonoBehaviour
 
     private void PlayerMove()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftShift))
             speed = 8f;
-        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
             speed = 5f;
 
         movement.Set(h, 0f, v);

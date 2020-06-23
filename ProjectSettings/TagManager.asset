@@ -17,6 +17,7 @@ TagManager:
   - Plate
   - Sushi
   - PassCounter
+  - PlateSushi
   layers:
   - Default
   - TransparentFX

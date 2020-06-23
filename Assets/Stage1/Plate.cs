@@ -10,8 +10,8 @@ public class Plate : MonoBehaviour
     private bool m_bIsDead = false;
     private bool m_bIsOnFood = false;
 
-    public void SetIsPlateOnFood(bool bIsOnFood) { m_bIsOnFood = bIsOnFood; }
-    public bool GetIsPlateOnFood() { return m_bIsOnFood; }
+ //   public void SetIsPlateOnFood(bool bIsOnFood) { m_bIsOnFood = bIsOnFood; }
+ //   public bool GetIsPlateOnFood() { return m_bIsOnFood; }
 
     void Start()
     {
@@ -20,6 +20,9 @@ public class Plate : MonoBehaviour
 
     void Update()
     {
+        if (m_bIsOnFood)
+            m_bIsDead = true;
+
         if (m_bIsHold)
             SetTransform(player.transform);
     //    else
@@ -29,33 +32,34 @@ public class Plate : MonoBehaviour
     void LateUpdate()
     {
         if (m_bIsDead)
-        {
-            m_bIsHold = false;
             Destroy(this.gameObject);
-        }
     }
 
     void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !m_bIsDead)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (!m_bIsHold)
                     m_bIsHold = true;
                 else
-                { 
+                {
                     m_bIsHold = false;
                     m_bIsOnFood = false;
                 }
             }
         }
-        if (other.gameObject.CompareTag("PassCounter")/* && m_bIsOnFood*/)
-        {
-            if(m_bIsOnFood)
-                player.GetComponent<Player>().SetAddCoin(8);
-            // 더러운 접시 생성
+        else if (other.gameObject.CompareTag("Sushi") && !m_bIsDead)
+        {   // 음식이랑 닿았을 때
             m_bIsDead = true;
+            //if (other.gameObject.CompareTag("PassCounter") && m_bIsOnFood)
+            //{
+            //    if(m_bIsOnFood)
+            //        player.GetComponent<Player>().SetAddCoin(8);
+            //    // 더러운 접시 생성
+            //    m_bIsDead = true;
+            //}
         }
     }
 
