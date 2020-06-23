@@ -20,6 +20,8 @@ public class Sushi : MonoBehaviour
 
     void Update()
     {
+        m_bIsOnPlate = plate.GetComponent<Plate>().GetIsPlateOnFood();
+
         if (m_bIsHold)
             SetTransform(player.transform);
         else if (m_bIsOnPlate)
@@ -27,8 +29,8 @@ public class Sushi : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, -90, 0);
             transform.position = plate.transform.position;
         }
-    //    else
-    //        transform.position = this.transform.position;
+     //   else
+     //       transform.position = this.transform.position;
     }
 
     void LateUpdate()
@@ -56,7 +58,8 @@ public class Sushi : MonoBehaviour
                 m_bIsOnPlate = true;
             plate.GetComponent<Plate>().SetIsPlateOnFood(true);
         }
-        else if (other.gameObject.CompareTag("PassCounter"))
+
+        if (other.gameObject.CompareTag("PassCounter"))
             if (Input.GetKeyDown(KeyCode.Space) && m_bIsOnPlate)
                 m_bIsDead = true;
     }
@@ -65,6 +68,6 @@ public class Sushi : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, -90, 0);
         transform.position = pTrans.position + pTrans.forward;
-        transform.position += new Vector3(0, 0.7f, 0);
+        transform.position += new Vector3(0, 0.8f, 0);
     }
 }

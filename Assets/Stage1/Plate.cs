@@ -44,13 +44,17 @@ public class Plate : MonoBehaviour
                 if (!m_bIsHold)
                     m_bIsHold = true;
                 else
+                { 
                     m_bIsHold = false;
+                    m_bIsOnFood = false;
+                }
             }
         }
-        if (other.gameObject.CompareTag("PassCounter") && m_bIsOnFood)
+        if (other.gameObject.CompareTag("PassCounter")/* && m_bIsOnFood*/)
         {
-            player.GetComponent<Player>().SetAddCoin(8);
-                // 더러운 접시 생성
+            if(m_bIsOnFood)
+                player.GetComponent<Player>().SetAddCoin(8);
+            // 더러운 접시 생성
             m_bIsDead = true;
         }
     }
@@ -59,6 +63,6 @@ public class Plate : MonoBehaviour
     {
         transform.rotation = pTrans.transform.rotation;
         transform.position = pTrans.position + pTrans.forward;
-        transform.position += new Vector3(0, 0.7f, 0);
+        transform.position += new Vector3(0, 0.8f, 0);
     }
 }
