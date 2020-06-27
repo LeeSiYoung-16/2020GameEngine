@@ -61,7 +61,7 @@ public class Sushi : MonoBehaviour
 
         if (other.gameObject.CompareTag("Plate") && !m_bIsHold)
         {
-            PlateSushiClone = Instantiate(PlateSushi, this.transform.position, Quaternion.Euler(0, -90, 0));
+            PlateSushiClone = Instantiate(PlateSushi, this.transform.position, Quaternion.identity);
             m_bIsDead = true;
         }
     }

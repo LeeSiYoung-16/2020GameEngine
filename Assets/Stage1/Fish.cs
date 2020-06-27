@@ -75,7 +75,7 @@ public class Fish : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftControl))  // 다지기
             {
                 player.GetComponent<Player>().SetPlayerIsMove(false);
-                ChopfishClone = Instantiate(Chopfish, this.transform.position, Quaternion.Euler(0, -90, 0));
+                ChopfishClone = Instantiate(Chopfish, this.transform.position, Quaternion.identity);
                 m_bIsDead = true;
             }
         }

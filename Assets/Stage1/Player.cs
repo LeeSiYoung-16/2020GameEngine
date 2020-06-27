@@ -11,8 +11,6 @@ public class Player : MonoBehaviour
     Vector3 movement;
     float h, v;
 
-    private float fSceneTime = 60f;
-
     private bool m_bIsMove = true;
     private int m_iCoin = 0;
 
@@ -35,7 +33,7 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
-//StartCoroutine(NextScene());
+
     }
 
     void FixedUpdate()
@@ -66,11 +64,5 @@ public class Player : MonoBehaviour
         Quaternion newRotation = Quaternion.LookRotation(movement);
         rigidbody.rotation = Quaternion.Slerp(rigidbody.rotation,
                                                newRotation, speed * Time.deltaTime);
-    }
-
-    IEnumerator NextScene()
-    {
-        yield return new WaitForSeconds(fSceneTime);
-        Application.LoadLevel("Stage2");
     }
 }

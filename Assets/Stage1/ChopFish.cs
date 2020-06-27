@@ -30,7 +30,7 @@ public class ChopFish : MonoBehaviour
     {
         if(m_bIsDead)
         {
-            sushiClone = Instantiate(sushi, transform.position, Quaternion.Euler(0, -90, 0));
+            sushiClone = Instantiate(sushi, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

@@ -10,10 +10,13 @@ public class TimeOut : MonoBehaviour
     private float fsecTime = 60f;
     private int iminTime = 0;
 
+    [SerializeField]
+    Text TimerText;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        TimerText = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -33,7 +36,6 @@ public class TimeOut : MonoBehaviour
         }
         int sec = Mathf.FloorToInt(fsecTime);
 
-        Text TimerText = GetComponent<Text>();
         if(sec >= 10)
             TimerText.text = "0" + iminTime.ToString() + ":" + sec.ToString();
         else
