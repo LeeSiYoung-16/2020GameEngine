@@ -20,17 +20,35 @@ public class Plate : MonoBehaviour
 
     void Update()
     {
+        CollisionFloor();
+
         if (m_bIsOnFood)
             m_bIsDead = true;
 
         if (m_bIsHold)
             SetTransform(player.transform);
-    //    else
-    //        transform.position = this.transform.position;
+        //    else
+        //        transform.position = this.transform.position;
+    }
+
+    private void CollisionFloor()
+    {
+        Vector3 vTempPos = this.transform.position;
+        if (vTempPos.y < 0f)
+        {
+            vTempPos.y = 0f;
+            this.transform.position = vTempPos;
+        }
     }
 
     void LateUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.LeftControl) && m_bIsHold)
+        {
+            m_bIsHold = false;
+            // 던지기
+        }
+
         if (m_bIsDead)
             Destroy(this.gameObject);
     }

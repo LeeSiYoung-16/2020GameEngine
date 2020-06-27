@@ -24,10 +24,22 @@ public class Fish : MonoBehaviour
 
     void Update()
     {
+        CollisionFloor();
+
         if (m_bIsHold)
             SetTransform(player.transform);
-    //    else
-    //        transform.position = this.transform.position;
+        //    else
+        //        transform.position = this.transform.position;
+    }
+
+    private void CollisionFloor()
+    {
+        Vector3 vTempPos = this.transform.position;
+        if (vTempPos.y < 0.17f)
+        {
+            vTempPos.y = 0.17f;
+            this.transform.position = vTempPos;
+        }
     }
 
     void LateUpdate()

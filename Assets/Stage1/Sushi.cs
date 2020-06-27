@@ -23,8 +23,20 @@ public class Sushi : MonoBehaviour
 
     void Update()
     {
+        CollisionFloor();
+
         if (m_bIsHold)
             SetTransform(player.transform);
+    }
+
+    private void CollisionFloor()
+    {
+        Vector3 vTempPos = this.transform.position;
+        if (vTempPos.y < 0.249f)
+        {
+            vTempPos.y = 0.249f;
+            this.transform.position = vTempPos;
+        }
     }
 
     void LateUpdate()

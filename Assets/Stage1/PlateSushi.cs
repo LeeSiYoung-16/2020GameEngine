@@ -16,6 +16,8 @@ public class PlateSushi : MonoBehaviour
 
     void Update()
     {
+        CollisionFloor();
+
         if (Input.GetKeyDown(KeyCode.LeftControl) && m_bIsHold)
         {
             m_bIsHold = false;
@@ -24,6 +26,16 @@ public class PlateSushi : MonoBehaviour
 
         if (m_bIsHold)
             SetTransform(player.transform);
+    }
+
+    private void CollisionFloor()
+    {
+        Vector3 vTempPos = this.transform.position;
+        if (vTempPos.y < 0f)
+        {
+            vTempPos.y = 0f;
+            this.transform.position = vTempPos;
+        }
     }
 
     void LateUpdate()

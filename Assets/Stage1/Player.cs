@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
-        StartCoroutine(NextScene());
+//StartCoroutine(NextScene());
     }
 
     void FixedUpdate()
