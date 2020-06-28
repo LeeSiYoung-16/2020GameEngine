@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1558452346965291308}
   - component: {fileID: 1558452346965291306}
   - component: {fileID: 1558452346965291307}
-  - component: {fileID: 8847984806446333805}
+  - component: {fileID: -7796953161444270031}
   m_Layer: 5
   m_Name: Recipe
-  m_TagString: Recipe
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &8847984806446333805
+--- !u!114 &-7796953161444270031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
