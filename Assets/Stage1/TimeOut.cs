@@ -5,18 +5,22 @@ using UnityEngine.UI;
 
 public class TimeOut : MonoBehaviour
 {
-    private float fSceneTime = 60f;
-    private float fRecipeAddTime = 0f;
+    private float fSceneTime = 90f;
+    private float fRecipeAddTime = 6f;
 
-    private float fsecTime = 60f;
-    private int iminTime = 0;
+    private float fsecTime = 30f;
+    private int iminTime = 1;
 
     public Recipe recipe;
     public Recipe recipeClone;
     private List<Recipe> RecipeList = new List<Recipe>();
- 
-    [SerializeField]
-    Text TimerText;
+
+    public List<Recipe> GetRecipeList()
+    {
+        return RecipeList;
+    }
+
+    [SerializeField] Text TimerText;
 
     // Start is called before the first frame update
     void Start()
@@ -44,9 +48,9 @@ public class TimeOut : MonoBehaviour
         for (int i = 0; i < RecipeList.Count; i++)
         {
             if (i == 0)
-                RecipeList[0].fAddRecipeX = 45f;
+                RecipeList[0].fAddRecipeX = RecipeList[i].myWidth - 10f;
             else
-                RecipeList[i].fAddRecipeX = 45f + (i * 90f);
+                RecipeList[i].fAddRecipeX = (i * RecipeList[i].myWidth) + ((i + 1) * (RecipeList[i].myWidth - 10f));
         }
     }
 
@@ -76,7 +80,8 @@ public class TimeOut : MonoBehaviour
     {      
         for (int i = 0; i < RecipeList.Count; i++)
         {
-            if (RecipeList[i].m_bIsDead)
+            // 일정 시간 지나거나 레시피 요리 성공했을 때
+            if (RecipeList[i].m_bIsDead || RecipeList[i].m_bIsClear)
                 RecipeList.RemoveAt(i);
         }
 

@@ -16,6 +16,11 @@ public class FollowCamera : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        Screen.fullScreen = false;
+    }
+
     void LateUpdate()
     {
         cameraPos.x = target.position.x + offsetX;

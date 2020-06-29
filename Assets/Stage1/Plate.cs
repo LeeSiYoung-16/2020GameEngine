@@ -27,8 +27,6 @@ public class Plate : MonoBehaviour
 
         if (m_bIsHold)
             SetTransform(player.transform);
-        //    else
-        //        transform.position = this.transform.position;
     }
 
     private void CollisionFloor()
@@ -68,17 +66,8 @@ public class Plate : MonoBehaviour
                 }
             }
         }
-        else if (other.gameObject.CompareTag("Sushi") && !m_bIsDead)
-        {   // 음식이랑 닿았을 때
+        else if (other.gameObject.CompareTag("Sushi") && !m_bIsDead)  
             m_bIsDead = true;
-            //if (other.gameObject.CompareTag("PassCounter") && m_bIsOnFood)
-            //{
-            //    if(m_bIsOnFood)
-            //        player.GetComponent<Player>().SetAddCoin(8);
-            //    // 더러운 접시 생성
-            //    m_bIsDead = true;
-            //}
-        }
     }
 
     void SetTransform(Transform pTrans)

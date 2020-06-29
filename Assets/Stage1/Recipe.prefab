@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -403.30005, y: 162.7}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1558452346965291306
@@ -83,3 +83,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3040c929a708884e8ce35d6c67e75b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinPlus: {fileID: 9115115127307375723, guid: aee6c301e1a33b240b0a195883278816,
+    type: 3}
+  coinPlusClone: {fileID: 9115115127307375723, guid: aee6c301e1a33b240b0a195883278816,
+    type: 3}
+  vUIPos: {x: 0, y: 0, z: 0}
+  fAddRecipeX: 0
+  m_bIsDead: 0
+  m_bIsClear: 0
+  myWidth: 0
+  myHeight: 0
+  fishrecipeIcon: {fileID: 7084242248896118369, guid: e96aebbec7d28ba4cb38e0138f7f2f57,
+    type: 3}
+  fishrecipeIconClone: {fileID: 7084242248896118369, guid: e96aebbec7d28ba4cb38e0138f7f2f57,
+    type: 3}

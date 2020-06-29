@@ -18,6 +18,8 @@ public class GameStart : MonoBehaviour
 
     void Update()
     {
+        Screen.fullScreen = false;
+
         if (Input.GetKeyDown(KeyCode.Space))
             ChangeScene();
     }

@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1cabc31ca2ab54ba596e012eaeb7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinPlus: {fileID: 9115115127307375723, guid: aee6c301e1a33b240b0a195883278816,
+    type: 3}
+  coinPlusClone: {fileID: 9115115127307375723, guid: aee6c301e1a33b240b0a195883278816,
+    type: 3}
 --- !u!65 &227096400266169957
 BoxCollider:
   m_ObjectHideFlags: 0

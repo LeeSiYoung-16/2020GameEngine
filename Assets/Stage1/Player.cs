@@ -13,11 +13,14 @@ public class Player : MonoBehaviour
 
     private bool m_bIsMove = true;
     private int m_iCoin = 0;
+    private int m_iPlusCoin = 0;
 
     public void SetPlayerIsMove(bool bIsMove) { m_bIsMove = bIsMove; }
     public bool GetPlayerIsMove() { return m_bIsMove; }
 
     public void SetAddCoin(int iCoin) { m_iCoin += iCoin; }
+    public void SetPlusCoin(int iCoin) { m_iPlusCoin = iCoin; }
+    public int GetPlusCoin() { return m_iPlusCoin; }
     public int GetCoin() { return m_iCoin; }
 
     void Start()
@@ -33,7 +36,6 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
-
     }
 
     void FixedUpdate()
@@ -62,7 +64,6 @@ public class Player : MonoBehaviour
         if (h == 0 && v == 0) return;
 
         Quaternion newRotation = Quaternion.LookRotation(movement);
-        rigidbody.rotation = Quaternion.Slerp(rigidbody.rotation,
-                                               newRotation, speed * Time.deltaTime);
+        rigidbody.rotation = Quaternion.Slerp(rigidbody.rotation, newRotation, speed * Time.deltaTime);
     }
 }

@@ -19,6 +19,7 @@ TagManager:
   - PassCounter
   - PlateSushi
   - Recipe
+  - Timer
   layers:
   - Default
   - TransparentFX
