@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeOut : MonoBehaviour
 {
     private float fSceneTime = 90f;
-    private float fRecipeAddTime = 10f;
+    private float fRecipeAddTime = 7f;
 
     private float fsecTime = 30f;
     private int iminTime = 1;
@@ -39,7 +39,7 @@ public class TimeOut : MonoBehaviour
     {
         fRecipeAddTime += Time.deltaTime;
 
-        if (fRecipeAddTime >= 10f)
+        if (fRecipeAddTime >= 7f)
         {
             fRecipeAddTime = 0f;
             RecipeList.Add(recipeClone = Instantiate(recipe));
@@ -77,13 +77,15 @@ public class TimeOut : MonoBehaviour
     }
 
     void LateUpdate()
-    {      
-        for (int i = 0; i < RecipeList.Count; i++)
-        {
-            // 일정 시간 지나거나 레시피 요리 성공했을 때
-            if (RecipeList[i].m_bIsDead || RecipeList[i].m_bIsClear)
-                RecipeList.RemoveAt(i);
-        }
+    {
+        //for (int i = 0; i < RecipeList.Count;)
+        //{
+        //    // 일정 시간 지나거나 레시피 요리 성공했을 때
+        //    if (RecipeList[i].m_bIsDead || RecipeList[i].m_bIsClear)
+        //        RecipeList.RemoveAt(i);
+        //    else
+        //        ++i;
+        //}
 
         StartCoroutine(NextScene());
     }
@@ -93,5 +95,4 @@ public class TimeOut : MonoBehaviour
         yield return new WaitForSeconds(fSceneTime);
         Application.LoadLevel("Stage2");
     }
-
 }

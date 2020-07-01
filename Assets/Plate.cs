@@ -66,7 +66,8 @@ public class Plate : MonoBehaviour
                 }
             }
         }
-        else if (other.gameObject.CompareTag("Sushi") && !m_bIsDead)  
+        else if ((other.gameObject.CompareTag("Sushi")|| other.gameObject.CompareTag("PrawnSushi")) 
+            && !m_bIsDead)  
             m_bIsDead = true;
     }
 

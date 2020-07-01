@@ -33,9 +33,9 @@ public class Prawn : MonoBehaviour
     private void CollisionFloor()
     {
         Vector3 vTempPos = this.transform.position;
-        if (vTempPos.y < 0.17f)
+        if (vTempPos.y < 0.05f)
         {
-            vTempPos.y = 0.17f;
+            vTempPos.y = 0.05f;
             this.transform.position = vTempPos;
         }
     }
@@ -81,6 +81,6 @@ public class Prawn : MonoBehaviour
     {
         this.transform.rotation = pTrans.rotation;
         this.transform.position = pTrans.position + pTrans.forward;
-        this.transform.position += new Vector3(0, 0.8f, 0);
+        this.transform.position += new Vector3(0, 0.9f, 0);
     }
 }

@@ -68,6 +68,6 @@ public class PrawnSushi : MonoBehaviour
     {
         this.transform.rotation = pTrans.rotation;
         this.transform.position = pTrans.position + pTrans.forward;
-        this.transform.position += new Vector3(0, 0.8f, 0);
+        this.transform.position += new Vector3(0, 0.9f, 0);
     }
 }

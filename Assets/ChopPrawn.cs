@@ -10,19 +10,19 @@ public class ChopPrawn : MonoBehaviour
     private float DestroyTime = 5f;
     private bool m_bIsDead = false;
 
- //   public FoodDelay foodDelay;
- //   public FoodDelay foodDelayClone;
+    public FoodDelay foodDelay;
+    public FoodDelay foodDelayClone;
 
     void Start()
     {
- //       foodDelayClone = Instantiate(foodDelay, transform.position, Quaternion.identity);
+        foodDelayClone = Instantiate(foodDelay, transform.position, Quaternion.identity);
     }
 
     void Update()
     {
-        //foodDelayClone.vUIPos = new Vector3(this.transform.position.x,
-        //    this.transform.position.y,
-        //    this.transform.position.z + 1f);
+        foodDelayClone.vUIPos = new Vector3(this.transform.position.x,
+            this.transform.position.y,
+            this.transform.position.z + 1f);
         StartCoroutine(CreateSushi());
     }
 

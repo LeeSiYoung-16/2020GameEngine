@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
+        if (Input.GetKey(KeyCode.RightShift))
+            Application.LoadLevel("Stage2");
     }
 
     void FixedUpdate()
