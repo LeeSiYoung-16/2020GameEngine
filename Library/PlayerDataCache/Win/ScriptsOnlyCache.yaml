@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ChopFish
+    - ChopPrawn
     - Coin
     - CoinPlus
     - Fish
@@ -11,9 +12,13 @@ ScriptsOnlyBuild:
     - FoodDelay
     - GameStart
     - Plate
+    - PlatePrawnSushi
     - PlateReturn
     - PlateSushi
     - Player
+    - Prawn
+    - PrawnSushi
+    - PrwanCrate
     - Recipe
     - SpriteEffect
     - Sushi
@@ -213,15 +218,45 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11702}
+    - Class: 114
+      Script: {instanceID: 11912}
+    - Class: 114
+      Script: {instanceID: 13050}
+    - Class: 114
+      Script: {instanceID: 640562}
+    - Class: 114
+      Script: {instanceID: 659770}
+    - Class: 114
+      Script: {instanceID: 659812}
+    - Class: 114
+      Script: {instanceID: 659838}
+    - Class: 114
+      Script: {instanceID: 659932}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -750,6 +785,36 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e716e5078141f882ead22184a8896550
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrwanCrate
+  - hash:
+      serializedVersion: 2
+      Hash: 1ecb17397e01bb90e98969f372e8b72e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Prawn
+  - hash:
+      serializedVersion: 2
+      Hash: a628bf351aee99ea642953c44ae92918
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChopPrawn
+  - hash:
+      serializedVersion: 2
+      Hash: b6da4db415f34bda92e7a3dfad5ec6a6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrawnSushi
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlatePrawnSushi
   platform: 5
   scenePathNames:
   - Assets/Scenes/GameStart.unity

@@ -20,6 +20,11 @@ TagManager:
   - PlateSushi
   - Recipe
   - Timer
+  - PrawnCrate
+  - ChopPrawn
+  - Prawn
+  - PrawnSushi
+  - PlatePrawnSushi
   layers:
   - Default
   - TransparentFX
