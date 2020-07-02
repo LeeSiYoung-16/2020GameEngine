@@ -26,6 +26,7 @@ TagManager:
   - PrawnSushi
   - PlatePrawnSushi
   - RecipeIcon
+  - TotalCoin
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class TimeOut2 : MonoBehaviour
     public PrawnRecipe recipe;
     public PrawnRecipe recipeClone;
     private List<PrawnRecipe> RecipeList = new List<PrawnRecipe>();
+    private GameObject player;
 
     public List<PrawnRecipe> GetRecipeList()
     {
@@ -25,7 +26,9 @@ public class TimeOut2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
         TimerText = GetComponent<Text>();
+        player.transform.position = new Vector3(0f, -0.05f, 6.5f);
     }
 
     // Update is called once per frame
@@ -78,13 +81,16 @@ public class TimeOut2 : MonoBehaviour
 
     void LateUpdate()
     {
-    //    StartCoroutine(NextScene());
+        StartCoroutine(NextScene());
+
+        // 다음스테이지로 바로 넘어가기.
+        if (Input.GetKey(KeyCode.RightShift))
+            Application.LoadLevel("GameEnd");
     }
 
-    //IEnumerator NextScene()
-    //{
-    //    // 게임 종료
-    //    //yield return new WaitForSeconds(fSceneTime);
-    //    //Application.LoadLevel("Stage2");
-    //}
+    IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(fSceneTime);
+        Application.LoadLevel("GameEnd");
+    }
 }

@@ -24,9 +24,11 @@ ScriptsOnlyBuild:
     - PrwanCrate
     - Recipe
     - SpriteEffect
+    - Star
     - Sushi
     - TimeOut
     - TimeOut2
+    - TotalCoin
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -44,8 +46,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEditor.UI.dll:
-    - UnityEditor.UI.RawImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -57,6 +57,61 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/GameEnd.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11180}
+    - Class: 114
+      Script: {instanceID: 11346}
+    - Class: 114
+      Script: {instanceID: 11796}
+    - Class: 114
+      Script: {instanceID: 12210}
+    - Class: 114
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 12994}
+    - Class: 114
+      Script: {instanceID: 13058}
+    - Class: 114
+      Script: {instanceID: 378294}
+    - Class: 114
+      Script: {instanceID: 378322}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/GameStart.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -80,6 +135,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -91,21 +150,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 11818}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12428}
+      Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12844}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13118}
+      Script: {instanceID: 13126}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -149,6 +208,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -172,45 +235,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11484}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11506}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11708}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 11914}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12644}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12726}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 12756}
+      Script: {instanceID: 12762}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12994}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 13066}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 13092}
     - Class: 114
-      Script: {instanceID: 13108}
+      Script: {instanceID: 13116}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,6 +321,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -273,43 +340,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11546}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11456}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11914}
+      Script: {instanceID: 11708}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 12216}
+      Script: {instanceID: 12100}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 12994}
     - Class: 114
-      Script: {instanceID: 13060}
+      Script: {instanceID: 13032}
+    - Class: 114
+      Script: {instanceID: 13058}
+    - Class: 114
+      Script: {instanceID: 13066}
     - Class: 114
       Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 359118}
-    - Class: 114
-      Script: {instanceID: 423904}
-    - Class: 114
-      Script: {instanceID: 423950}
-    - Class: 114
-      Script: {instanceID: 427510}
+      Script: {instanceID: 13092}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -425,10 +490,22 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 61d65050f145abfc42239e4307944efa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrawnRecipeIcon
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: d8e7598c95b3c47f4eed7662f2bc315b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CoinPlus2
   - hash:
       serializedVersion: 2
       Hash: 9d7a8ef686a3f737fa2b345507392ca5
@@ -521,7 +598,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: a414d62e85eae002509290a6bc40cc27
+      Hash: 5098df2a2dc688dfa1be7293cc867da7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FollowCamera
@@ -591,6 +668,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: c05648dcf84c261347c714772ac01463
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrawnRecipe
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -851,6 +934,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 6a0609d0f4eef2bfab33fb8c5bf65270
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimeOut2
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -881,31 +970,20 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 6a0609d0f4eef2bfab33fb8c5bf65270
+      Hash: ecee2cd725ef309a413f91704e807e59
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TimeOut2
+    className: TotalCoin
   - hash:
       serializedVersion: 2
-      Hash: c05648dcf84c261347c714772ac01463
+      Hash: 77c1cfa893b07f463b04e995e3bb2dab
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PrawnRecipe
-  - hash:
-      serializedVersion: 2
-      Hash: 61d65050f145abfc42239e4307944efa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PrawnRecipeIcon
-  - hash:
-      serializedVersion: 2
-      Hash: d8e7598c95b3c47f4eed7662f2bc315b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CoinPlus2
+    className: Star
   platform: 5
   scenePathNames:
   - Assets/Scenes/GameStart.unity
   - Assets/Scenes/Stage1.unity
   - Assets/Scenes/Stage2.unity
+  - Assets/Scenes/GameEnd.unity
   playerPath: C:/Users/user/Documents/GitHub/2020GameEngine/OverCooked.exe

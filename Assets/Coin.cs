@@ -27,9 +27,6 @@ public class Coin : MonoBehaviour
     void Update()
     {
         int iCoin = player.GetComponent<Player>().GetCoin();
-        if (iCoin >= 0)
-            CoinText.text = iCoin.ToString();
-        else
-            CoinText.text = iCoin.ToString();
+        CoinText.text = iCoin.ToString();
     }
 }

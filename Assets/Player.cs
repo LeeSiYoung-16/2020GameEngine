@@ -23,6 +23,12 @@ public class Player : MonoBehaviour
     public int GetPlusCoin() { return m_iPlusCoin; }
     public int GetCoin() { return m_iCoin; }
 
+    // 테스트
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -36,6 +42,7 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
+        // 다음스테이지로 바로넘어가기 
         if (Input.GetKey(KeyCode.RightShift))
             Application.LoadLevel("Stage2");
     }
