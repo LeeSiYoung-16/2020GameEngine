@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 122
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1120
     height: 731
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 123
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1120
     height: 420
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 124
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,8 +211,8 @@ MonoBehaviour:
     y: 0
     width: 820
     height: 420
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -476,7 +476,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 960ffbffb20ffbff6610fbffd617fbffda17fbff1618fbff1819fbff3419fbffe819fbff5821fbff5c21fbff9821fbffa23efbffe63efbff023ffbffb63ffbff2647fbff2a47fbff6647fbff4460fbffde67fbff4868fbffd070fbff388afbff58a4fbffe2a4fbfffea4fbffb2a5fbff22adfbff26adfbff62adfbff24aefbff40aefbfff4aefbff64b6fbff68b6fbffa4b6fbff50b7fbff6cb7fbff20b8fbff90bffbff94bffbffd0bffbff7cc0fbff98c0fbff4cc1fbffbcc8fbffc0c8fbfffcc8fbffa8c9fbffc4c9fbff78cafbffe8d1fbffecd1fbff28d2fbffd4d2fbfff0d2fbffa4d3fbff14dbfbff18dbfbff54dbfbff00dcfbff1cdcfbffd0dcfbff40e4fbff44e4fbff80e4fbff2ce5fbff48e5fbfffce5fbff6cedfbff70edfbffacedfbff58eefbff74eefbff28effbff98f6fbff9cf6fbffd8f6fbff881ffcff8e24fcff582cfcff0a4dfcff7e50fcffda78fcff8091fcff469afcff3c9bfcff58cdfcff12d5fcff8e18fdff0420fdffa620fdfff844fdfffc4cfdffc24efdffde4efdff904ffdff0057fdffa66ffdffe26ffdff0c80fdff26a1fdff46a9fdfface4fdff66edfdff240efeff2e16feff2c49feff3a51feff1872feff6c7afeff0882feff149cfeffcea3feff62d7feffa0d7feffe2d7fefffed7feffb2d8feff4ee0fefffaf8feff3cf9feff64f9feff1a01ffffb819ffffee19ffff8c21ffffb821ffffb822ffffd422ffff8823ffff263cffff663cffff2245ffff9845ffff664dffff744dffffaa4dffffc04dffff8866ffff1c67ffff3867ffff806fffff2c88ffff6e88ffff4089ffff7889ffff9489ffffdc91ffff8aaaffff92aaffff3eabffffccabffffe8abffff2cb4ffffd4ccffff12cdffff04d0ffff0ed0ffff74d1ffff90d1ffffd4d9ffff7ef2ffff82f2fffff2f2ffff70fbfffff4ffffff58db0100c23a020088d5020022590400345904000a5a04000ca204001ea20400f4a204004e8105009ac50500e60206000c54060062ab0700b61e0800fe6108003a620800
+      m_ExpandedIDs: 4ec0ffff6ac0ffff22c1ffff2ac1ffffccd9ffff0cdaffff14e2ffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -680,20 +680,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/GameEnd
   m_ViewMode: 1
   m_StartGridSize: 55
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/GameEnd
   m_LastFoldersGridSize: 55
   m_LastProjectPath: C:\Users\user\Documents\GitHub\2020GameEngine
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 423e0000
-    m_LastClickedID: 15938
-    m_ExpandedIDs: 00000000223e0000243e000000ca9a3b
+    m_SelectedIDs: 66480000
+    m_LastClickedID: 18534
+    m_ExpandedIDs: 000000005e4800006048000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -721,7 +721,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000223e0000243e0000
+    m_ExpandedIDs: 000000005e48000060480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -89,15 +89,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12596}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 378294}
+      Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 378322}
+      Script: {instanceID: 13062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -158,13 +158,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13062}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 13130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,25 +255,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12644}
+      Script: {instanceID: 12646}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12734}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12764}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13062}
     - Class: 114
-      Script: {instanceID: 13066}
+      Script: {instanceID: 13070}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13120}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -360,21 +360,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12870}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 13032}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13062}
     - Class: 114
-      Script: {instanceID: 13066}
+      Script: {instanceID: 13070}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 13088}
     - Class: 114
-      Script: {instanceID: 13092}
+      Script: {instanceID: 13096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -778,6 +778,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 77c1cfa893b07f463b04e995e3bb2dab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Star
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -824,6 +830,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ecee2cd725ef309a413f91704e807e59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TotalCoin
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -968,18 +980,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ecee2cd725ef309a413f91704e807e59
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TotalCoin
-  - hash:
-      serializedVersion: 2
-      Hash: 77c1cfa893b07f463b04e995e3bb2dab
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Star
   platform: 5
   scenePathNames:
   - Assets/Scenes/GameStart.unity

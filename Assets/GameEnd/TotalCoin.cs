@@ -31,7 +31,7 @@ public class TotalCoin : MonoBehaviour
         if (100 < m_iTotalCoin && m_iTotalCoin <= 200)
         {
             starClone = Instantiate(star);
-            starClone.vUIPos = new Vector3(Screen.width * 0.5f, Screen.height * 0.4f, 0f);
+            starClone.vUIPos = new Vector3(Screen.width * 0.5f, Screen.height * 0.63f, 0f);
         }
         else if (200 < m_iTotalCoin)
         {
